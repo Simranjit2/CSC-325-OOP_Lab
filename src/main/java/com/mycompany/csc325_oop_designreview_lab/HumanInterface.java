@@ -6,8 +6,12 @@
 package com.mycompany.csc325_oop_designreview_lab;
 
 /**
+ * <p>
+ * Title: Lab #3 - HumanInterface</p>
  *
- * @author simra
+ * <p>
+ * Description: HumanInterface Class - a interface; </p>
+ *
  */
 public interface HumanInterface {
 

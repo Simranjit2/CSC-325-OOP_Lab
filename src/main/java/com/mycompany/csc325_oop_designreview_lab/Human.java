@@ -10,6 +10,9 @@ public abstract class Human {
     private String address;
     private short age;
 
+    /**
+     * default constructor - stores default values in all variables.
+     */
     public Human() {
         name = "";
         address = "";
@@ -37,4 +40,15 @@ public abstract class Human {
     public void setAge(short age) {
         this.age = age;
     }
+
+    /**
+     * toString- creates and returns a string.
+     *
+     * @return the state of the object
+     */
+    @Override
+    public String toString() {
+        return "Name: " + name + "  " + "Age: " + age;
+    }
+
 }
