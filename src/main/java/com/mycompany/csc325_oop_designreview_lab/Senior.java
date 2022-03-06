@@ -6,42 +6,42 @@
 package com.mycompany.csc325_oop_designreview_lab;
 
 /**
+ * <p>
+ * Title: Lab #5 - Senior</p>
  *
- * @author simra
+ * <p>
+ * Description: Senior Class - a subclass of Student; </p>
+ *
+ * @author Simranjit
  */
+// Todo 7:[DONE] Create two classes for Freshman and Senior 
 public class Senior extends Student {
 
-    //credits
-    private int credits;
-
-    public Senior() {
-        super();
-        this.credits = 85;
-    }
-
     /**
+     * parameterized constructor -- stores user-specified values in all
+     * variables
      *
-     * @param name
-     * @param age
-     * @param credits
+     * @param name - name
+     * @param age - age
+     * @param credits - credits
      */
-//    public Senior(String name, short age, int credits) {
-//        super(name, age);
-//        this.credits = credits;
-//    }
-
-    public int getCredits() {
-        return credits;
+    public Senior(String name, short age, int credits) {
+        super(name, age, credits);
     }
 
+    // ToDo 10: [DONE] Add a toString method for Senior class
     /**
-     * toString-
+     * toString method -- creates a String representing the display the current
+     * state
      *
-     * @return
+     * @return a string
      */
     @Override
     public String toString() {
-        return super.toString() + "Credits: " + this.credits;
+        if (this.getCredits() <= 85) {
+            return super.toString() + " Credits: " + this.getCredits();
+        } else {
+            return super.toString() + " Credits: Minimum credits should be 85!!";
+        }
     }
-
 }
